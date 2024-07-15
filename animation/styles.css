@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b3033
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.box {
+    width: 50px;
+    /*? Sets the height according to width (No matter inc or dec)*/
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgb(156, 156, 250);
+    box-shadow: 0px 0px 0px 15px #353f6d;
+
+    /*? Animation  */
+    animation-name: lefttoright;
+    animation-duration: 1.4s;
+
+    animation-timing-function: linear;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+
+    /*? iteration-count is necessary for animation-direction:alternate*/
+    animation-direction: alternate;
+}
+
+@keyframes lefttoright {
+    0% {
+        translate: 0%;
+    }
+
+    50% {
+        translate: 50vw 50vh;
+    }
+
+    100% {
+        translate: calc(90vw - 50px);
+    }
+}
+
+/* @keyframes lefttoright {
+    from {
+        translate: 0%;
+    }
+
+    to {
+        translate: calc(90vw - 50px);
+    }
+} */
