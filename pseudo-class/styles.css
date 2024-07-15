@@ -1,0 +1,50 @@
+.main p:first-child {
+    color: red;
+}
+
+.main li:last-child {
+    color: blue;
+}
+
+.main p:last-child {
+    color: red;
+}
+
+.main li:nth-of-type(1) {
+    color: red;
+}
+
+.main li:first-of-type {
+    color: violet;
+}
+
+.main li:last-of-type {
+    color: rgb(30, 145, 105);
+}
+
+.main li:nth-child(even) {
+    /*Targetting the children of parents*/
+    color: blue;
+    font-size: 30px;
+}
+
+.main li:nth-child(odd) {
+    color: green;
+    font-size: 30px;
+}
+
+.main p:first-child {
+    color: aqua;
+    font-size: 20px;
+}
+
+.main p:last-child {
+    color: palevioletred;
+    font-size: 20px;
+}
+
+.main li:nth-child(1) {
+    /*Targetting the children of parents*/
+    color: red;
+    font-size: 30px;
+}

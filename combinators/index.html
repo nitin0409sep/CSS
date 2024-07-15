@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="outer-div">
+        <h1>Combinators</h1>
+    </div>
+    <!-- Descendent Combinator  -->
+    <div>
+        <p>This is a paragraph inside a div.</p>
+        <span>This is a span inside a div.</span>
+    </div>
+    <p>This is a paragraph outside a div.</p>
+
+    <!-- Child Combinator -->
+    <div class="content">
+        <p>This is a direct child paragraph.</p>
+        <div>
+            <p>This is a nested paragraph.</p>
+        </div>
+    </div>
+
+    <!-- Adjancent Sibling Combinator -->
+    <h1>Heading</h1>
+    <p>First paragraph after heading.</p>
+    <p>Second paragraph, not adjacent.</p>
+
+    <!--  General Sibling Combinator  -->
+    <h2>Heading</h2>
+    <p>First paragraph after heading.</p>
+    <p>Second paragraph after heading.</p>
+    <div>
+        <p>Nested Para</p>
+        <h2>Heading</h2>
+        <p>First paragraph after heading.</p>
+    </div>
+
+
+</body>
+
+</html>

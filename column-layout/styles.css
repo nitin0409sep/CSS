@@ -1,0 +1,12 @@
+div {
+    /* In how many columns u wanna divide the content */
+    column-count: 4;
+    text-align: justify;
+    column-rule: 4px solid paleturquoise;
+    /* Gap b/w columns*/
+    column-gap: 30px;
+}
+
+h1 {
+    column-span: all;
+}

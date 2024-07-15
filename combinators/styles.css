@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Descendent Combinator (' ') */
+div p {
+    font-weight: 600;
+    color: palevioletred;
+    font-size: larger;
+}
+
+/* Child Combinator (>) */
+.content>p {
+    font-weight: 600;
+    color: blue;
+    font-size: larger;
+}
+
+/*  Adjacent Sibling Combinator (+) */
+h1+p+p {
+    font-weight: 600;
+    color: purple;
+    font-size: larger;
+}
+
+/* General Sibling Combinator */
+h2~p {
+    color: rgb(57, 138, 225);
+}
