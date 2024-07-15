@@ -1,0 +1,16 @@
+div {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(77, 77, 158);
+
+    border: 12px solid violet;
+
+    border-top: 12px solid saddlebrown;
+
+    border-bottom: 12px solid saddlebrown;
+
+    border-radius: 50%;
+
+    border-radius: 10px 20%;
+
+}

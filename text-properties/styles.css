@@ -1,0 +1,29 @@
+h1 {
+    text-decoration: underline;
+    /* text-decoration: overline; */
+    /* text-decoration: line-through; */
+
+
+    text-decoration-thickness: 2px;
+    text-decoration-style: wavy;
+
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+
+    text-shadow: 2px 2px 0 greenyellow;
+    /* x, y, blur, color*/
+
+}
+
+p {
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 1.5;
+}
+
+p::first-letter {
+    /* Pseudo Eelement */
+    font-size: 50px;
+    font-weight: 500;
+}

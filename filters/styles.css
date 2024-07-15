@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 50%;
+    border-radius: 20px;
+
+    filter: grayscale(); /* Make image black and white*/
+    filter: blur(2px); /* Make image blur*/
+
+    filter: contrast(2);
+    filter: brightness(140%);
+    filter: invert();
+    filter: saturate(2);
+}

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.section1 {
+    background-image: url('../assests/2.jpg');
+}
+
+.section2 {
+    background-image: url('../assests/5.jpg');
+}
+
+.section3 {
+    background-image: url('../assests/3.jpg');
+}
+
+.section4 {
+    background-image: url('../assests/19233.jpg');
+}

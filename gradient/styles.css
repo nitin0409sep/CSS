@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section {
+    height: 100vh;
+    width: 100%;
+
+    /* background-image: linear-gradient(rgb(102, 102, 237), rgb(163, 247, 163)); */
+    /* background-image: linear-gradient(to right, rgb(102, 102, 237), rgb(163, 247, 163)); */
+    /* background-image: linear-gradient(to left, rgb(102, 102, 237), rgb(163, 247, 163)); */
+    /* background-image: linear-gradient(to top, rgb(102, 102, 237), rgb(163, 247, 163)); */
+
+
+    /* Diagnally */
+    /* background-image: linear-gradient(to top right, rgb(102, 102, 237), rgb(163, 247, 163));
+    background-image: linear-gradient(to bottom left, rgb(102, 102, 237), rgb(163, 247, 163)); */
+
+
+    background-image:
+        repeating-linear-gradient(to bottom left, rgba(102, 102, 237, 0.5), rgb(163, 247, 163, 0.5) 20px),
+        url('../assests/2.jpg');
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+}

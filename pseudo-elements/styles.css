@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 600px;
+    text-align: justify;
+    padding: 10px;
+}
+
+h1 {
+    color: red;
+    position: relative;
+}
+
+
+/* Before Pseudo Class */
+h1::before {
+    content: "Before Content";
+    padding-right: 5px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    text-transform: uppercase;
+    color: blue;
+}
+
+/* After Pseudo Class */
+h1::after {
+    content: '';
+    position: absolute;
+    border: 2px solid forestgreen;
+    width: 40%;
+    right: 0;
+    top: 25px;
+}
+
+
+/* first-letter Pseudo Class */
+p::first-letter {
+    font-size: 50px;
+    font-weight: 800;
+    color: palevioletred
+}
+
+/* first-line Pseudo Class */
+p::first-line {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+/* Selection Pseudo Class */
+p::selection {
+    background-color: rgba(255, 228, 196, 0.5);
+}
+
+input::placeholder {
+    background-color: aqua;
+    color: brown;
+}

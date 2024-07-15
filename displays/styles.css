@@ -1,0 +1,21 @@
+/* Displays - block, inline, inline-block */
+
+p {
+    background-color: blueviolet;
+    /* display: inline; -- Applicable */
+}
+
+a {
+    background-image: linear-gradient(to right, rgb(195, 195, 249), rgb(226, 199, 255));
+    text-decoration: none;
+    border-radius: 10px;
+
+    /* Cant apply margin and padding - top-bottom - in Inline Elements/*/
+
+    /* We can make inline to block or inlne-block*/
+    display: inline-block;
+    /* Now we can*/
+    margin-top: 10px;
+    padding: 20px 20px;
+
+}

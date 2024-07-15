@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+section {
+    height: 800px;
+}
+
+.outer-main {
+    background-color: brown;
+    height: 30px;
+    position: fixed;
+    width: 100%;
+}
+
+.section1 {
+    background-color: aquamarine;
+}
+
+.section2 {
+    background-color: lightblue;
+}
+
+.section3 {
+    background-color: pink;
+}
+
+.section4 {
+    background-color: greenyellow;
+}
+
+.section2>a {
+    background-color: red;
+    position: sticky;
+    /* top: 50%; */
+}
