@@ -1,0 +1,71 @@
+h1 {
+    display: inline-block;
+
+    /*? Old Way  */
+    border-top: 4px solid green;
+    border-bottom: 4px solid green;
+
+    border-left: 4px solid red;
+    border-right: 4px solid red;
+
+    /*? New Way */
+    border-block: 4px solid yellow;
+    border-inline: 4px solid rgb(140, 45, 61);
+}
+
+/*? CSS NESTING  */
+
+.main {
+    & .nest {
+        color: aqua;
+    }
+
+    & p {
+        background-color: bisque;
+    }
+
+    & .nest::before {
+        content: '*';
+        color: red;
+        font-size: 60px;
+    }
+}
+
+
+/*? is(), where(), has(), not()  */
+
+ul li a,
+ul li p,
+ul li h4 {
+    color: blueviolet
+}
+
+ul li :is(a, p, h4) {
+    color: red;
+}
+
+/*? :is() & :where() both are same the only difference is in its specificity i.e :is() > :where()  */
+/*? :where() specificity is least in all, if somewhere else you have described that property then it will not work */
+
+ul li :where(a, p, h4) {
+    color: chartreuse;
+}
+
+/*? :has()  */
+.parent:has([type="checkbox"]:checked) label {
+    color: red;
+}
+
+/*? Accent Color  */
+input[type="checkbox"] {
+    accent-color: green;
+}
+
+/*? :not()  */
+.ul-li ul li {
+    color: green;
+}
+
+.ul-li ul li:not(li:nth-child(even)) {
+    padding: 40px;
+}
