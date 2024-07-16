@@ -1,0 +1,14 @@
+.container {
+    container-type: inline-size;
+    container-name: changeLayout;
+
+    width: 300px;
+    /* Change width to below 400px to see the red background */
+    background-color: aquamarine;
+}
+
+@container changeLayout (width <=250px) {
+    .container {
+        background-color: red;
+    }
+}
